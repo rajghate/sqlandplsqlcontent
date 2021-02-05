@@ -1,0 +1,12 @@
+select e.ename,e.sal,e.job,e.hiredate,e.mgr,e.deptno,d.deptno,d.dname,d.loc from emp e full outer join dept d on(e.deptno = d.deptno);
+select ename,hiredate from emp;
+select ename,hiredate,deptno from emp where job = 'CLERK';
+select ename,SAL from emp where sal > 2000;
+select ename from emp where ename like '%a%';
+select ename from emp where ename like '_____';
+select ename,hiredate from emp where hiredate like '%81' or hiredate like '%82';
+select ename as name,hiredate as Start_Date from emp;
+select ename,hiredate from emp order by hiredate;
+select ename,sal from emp order by sal desc;
+select ename || ' of department ' || deptno ||' earned commission '|| comm from emp order by sal desc;
+select deptno from emp where job = 'CLERK';
